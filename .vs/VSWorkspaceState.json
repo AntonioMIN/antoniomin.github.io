@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\css"
+    "\\assets\\css",
+    "\\assets\\img",
+    "\\assets\\img\\codestorage",
+    "\\assets\\img\\hoseodormitorymenu"
   ],
   "SelectedNode": "\\work_hoseodormitorymenu.html",
   "PreviewInSolutionExplorer": false
