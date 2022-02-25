@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Antonio Min</title><link>/</link><description>Antonio Min</description><generator>Hugo -- gohugo.io</generator><language>ko-kr</language><lastBuildDate>Thu, 24 Feb 2022 19:35:45 +0900</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>내가 Notion으로 프로젝트 관리하는 방법</title><link>/posts/my-project-manage-on-notion/</link><pubDate>Thu, 24 Feb 2022 19:35:45 +0900</pubDate><guid>/posts/my-project-manage-on-notion/</guid><description>&lt;p>혼자서 프로젝트 거리로 괜찮은게 생기면 틈틈이 만드는 편이라 지금까지 생겼다가 죽은 프로젝트들이 많다. (그 중엔 제대로 된게 하나도 없다..) 혼자하는 프로젝트라도 다른 일을 하면서 진행하다 보면 어디까지 했는지 놓치기도 자주하고, 하다보면 이런저런 생각나는 것도 많아서 평소 일하는 스타일과 비슷하게 관리하면 어떨까라는 생각으로 노션을 이용해 관리하고 있다.&lt;/p>
+&lt;p>최근 몇개 프로젝트는 노션으로 정리하면서 해봤는데, 그러면서 만든 구조를 적어두려 한다.&lt;/p>
+&lt;ul>
+&lt;li>Project : 만들고 싶은거&lt;/li>
+&lt;li>Todo : 해야할거&lt;/li>
+&lt;li>Run : 단기목표 관리용&lt;/li>
+&lt;/ul>
+&lt;p>전 회사에서 사용했던 노션 구조를 많이 참고해서 만들었다. 처음에는 Project랑 Todo만 사용하다가 쌓이는 백로그와 완성을 위해서 해야하는 일들을 구분하기 위해서 Run이라는 단위를 만들었다. (애자일 스프린트같은?)&lt;/p>
+&lt;h2 id="project" >Project
+&lt;span>
+&lt;a href="#project">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>프로젝트에는 전체적인 그림을 그려두는 곳으로 사용한다. 어떤걸 만드는 프로젝트인지, 어떤 목표로 만드는지 적고 어떤 순서로 진행할지 간략히 쓰는 용으로 쓴다.&lt;/p>
+&lt;p>&lt;img src="/my-project-manage-on-notion/project.png" alt="Untitled">&lt;/p>
+&lt;h3 id="status" >Status
+&lt;span>
+&lt;a href="#status">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;ul>
+&lt;li>Building : 구상 단계&lt;/li>
+&lt;li>On going : 진행 단계&lt;/li>
+&lt;li>Pending : 멈춤&lt;/li>
+&lt;li>Drop : 접음&lt;/li>
+&lt;/ul>
+&lt;p>4가지 상태로 나눠서 관리하고 있다. 지금까지 완성해서 제대로된 서비스가 된 프로젝트가 없었는데 만약 서비스하는 프로젝트가 생긴다면 &lt;code>Serving&lt;/code> 이라는 상태를 추가할 것 같다.&lt;/p>
+&lt;h3 id="todo" >Todo
+&lt;span>
+&lt;a href="#todo">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>Project에 종속되는 할 일들을 담는 곳 이다. Project에서 끄적인 내용들을 유형, 상태, 우선순위, 일정을 사용해서 구체적이고 세분화해서 관리한다.&lt;/p>
+&lt;p>&lt;img src="/my-project-manage-on-notion/todo.png" alt="Untitled">&lt;/p>
+&lt;p>&lt;img src="/my-project-manage-on-notion/todo-detail.png" alt="Untitled">&lt;/p>
+&lt;h3 id="유형" >유형
+&lt;span>
+&lt;a href="#%ec%9c%a0%ed%98%95">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;ul>
+&lt;li>작업 : Coding. 노동.&lt;/li>
+&lt;li>버그 : 이슈처리&lt;/li>
+&lt;li>검토 : 구글링하기&lt;/li>
+&lt;/ul>
+&lt;p>새롭게 만들 것들은 &lt;code>작업&lt;/code> 으로 등록하고, 그 외 이슈관련된 것들은 &lt;code>버그&lt;/code> 로 등록해서 분리되어 있도록 했다. &lt;code>검토&lt;/code> 는 작업 진행 전에 광범위하게 리서치가 필요한 경우, 내용들을 정리하는 문서 역할을 느낌으로 사용했다.&lt;/p>
+&lt;h3 id="상태" >상태
+&lt;span>
+&lt;a href="#%ec%83%81%ed%83%9c">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;ul>
+&lt;li>시작 전&lt;/li>
+&lt;li>진행 중&lt;/li>
+&lt;li>완료&lt;/li>
+&lt;li>취소&lt;/li>
+&lt;/ul>
+&lt;p>일반적인 할일 상태들&lt;/p>
+&lt;h3 id="우선순위" >우선순위
+&lt;span>
+&lt;a href="#%ec%9a%b0%ec%84%a0%ec%88%9c%ec%9c%84">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;ul>
+&lt;li>우선순위 1~5&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>우선순위 1&lt;/code>이 제일 급한 건이다. 할일이 많이 쌓였을 때 어떤걸 먼저 해야할지 나누는 용으로 사용된다.&lt;/p>
+&lt;h3 id="일정" >일정
+&lt;span>
+&lt;a href="#%ec%9d%bc%ec%a0%95">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>혼자하는 진행하기 때문에 일정은 그리 중요하지 않지만 너무 늘어지는 것 같아 추가해서 사용했다. 하지만 효과는 없었다..&lt;/p>
+&lt;h2 id="run" >Run
+&lt;span>
+&lt;a href="#run">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>프로젝트에 종속되게 되고, 단기간에 이루고자 하는 목표를 위해서 진행해야하는 할 일들을 묶는 역할을 하게된다.&lt;/p>
+&lt;p>&lt;img src="/my-project-manage-on-notion/run.png" alt="Untitled">&lt;/p>
+&lt;h3 id="status-1" >Status
+&lt;span>
+&lt;a href="#status-1">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;ul>
+&lt;li>Building : 구상 단계&lt;/li>
+&lt;li>On Going : 진행 중&lt;/li>
+&lt;li>Finish : 달성&lt;/li>
+&lt;li>Pending : 보류&lt;/li>
+&lt;li>Canceled : 접음&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>Project&lt;/code>와 비슷한 구성의 &lt;code>Status&lt;/code>를 가지도록 했다. 프로젝트의 프로젝트가 되는 개념이고, 프로젝트 발전 스텝을 구분 짓는 역할을 위해 만들었다.&lt;/p></description></item><item><title>상상을 현실로, 개발자 민병윤</title><link>/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/</guid><description>&lt;p>Antonio Min &lt;a href="mailto:gvvvv1123@gmail.com">gvvvv1123@gmail.com&lt;/a>&lt;/p>
+&lt;p>Primary Position: Backend&lt;/p>
+&lt;h1 id="jobs" >Jobs
+&lt;span>
+&lt;a href="#jobs">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;h2 id="marketit" >MarketIt
+&lt;span>
+&lt;a href="#marketit">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>&lt;a href="https://marketit.asia">MarketIt&lt;/a>&lt;/p>
+&lt;p>&lt;code>Full-stack Developer&lt;/code> &lt;code>2019.5~2021.7&lt;/code>&lt;/p>
+&lt;p>&lt;code>PHP&lt;/code> &lt;code>React Native&lt;/code> &lt;code>RabbitMQ&lt;/code> &lt;code>Redis&lt;/code> &lt;code>Luigi&lt;/code> &lt;code>Flask&lt;/code>&lt;/p>
+&lt;p>인플루언서 마켓팅 플렛폼으로 인플루언서 앱과 파트너 페이지, 리뷰 플러그인 등의 서비스를 운영합니다.&lt;/p>
+&lt;p>React Native 개발부터 CRM, 파트너 페이지, API, Bot 등 다양한 개발 부분에 참여하였습니다. 기존에 개발된 시스템 성능, 코드 품질 향상에 집중하여 업무를 수행했습니다.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Works&lt;/p>
+&lt;h3 id="마켓잇-파트너-어플-개발httpsplaygooglecomstoreappsdetailsidcommspothlko" >&lt;a href="https://play.google.com/store/apps/details?id=com.mspot&amp;amp;hl=ko">마켓잇 파트너 어플 개발&lt;/a>
+&lt;span>
+&lt;a href="#%eb%a7%88%ec%bc%93%ec%9e%87-%ed%8c%8c%ed%8a%b8%eb%84%88-%ec%96%b4%ed%94%8c-%ea%b0%9c%eb%b0%9chttpsplaygooglecomstoreappsdetailsidcommspothlko">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>&lt;code>React Native&lt;/code> &lt;code>Redux&lt;/code> &lt;code>2019.5~2019.8&lt;/code>&lt;/p>
+&lt;p>광고주 용 어플리케이션 개발에 참여하였습니다. 어플을 통해서 인플루언서 검색과 캠페인 진행 상황을 확인할 수 있습니다. React와 Xamarin 개발 경험으로 빠르게 학습하여 업무에 투입될 수 있었습니다.&lt;/p>
+&lt;h3 id="restful-api-도입" >RESTful API 도입
+&lt;span>
+&lt;a href="#restful-api-%eb%8f%84%ec%9e%85">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>&lt;code>PHP&lt;/code> &lt;code>Slim Framework&lt;/code> &lt;code>RESTful&lt;/code> &lt;code>2019.8&lt;/code>&lt;/p>
+&lt;p>광고주 용 어플리케이션을 개발하면서 API 구조적 문제점을 경험하고 REST API 도입을 제안하였습니다. 기술 검토부터 POC를 걸쳐 기존 API를 옮기는 작업을 진행했습니다. 경영진의 개발 니즈에 맞춰 프레임워크를 선택하고 개발 가이드라인을 세워 체계화된 API를 개발할 수 있도록 하였습니다.&lt;/p>
+&lt;h3 id="캠페인-지급-시스템-개선" >캠페인 지급 시스템 개선
+&lt;span>
+&lt;a href="#%ec%ba%a0%ed%8e%98%ec%9d%b8-%ec%a7%80%ea%b8%89-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ea%b0%9c%ec%84%a0">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>&lt;code>PHP&lt;/code> &lt;code>2020.1~2020.2&lt;/code>&lt;/p>
+&lt;p>기존 일괄 처리 방식 시스템에서 실시간 방식으로 변경하면서 지급에 소요되는 시간을 없앴습니다. MongoDB 쿼리문을 차용하여 유저의 지표를 비즈니스 니즈에 맞춰 다양한 규칙으로 지급되도록 디자인 하였습니다.&lt;/p>
+&lt;h3 id="리뷰-플러그인-개선" >리뷰 플러그인 개선
+&lt;span>
+&lt;a href="#%eb%a6%ac%eb%b7%b0-%ed%94%8c%eb%9f%ac%ea%b7%b8%ec%9d%b8-%ea%b0%9c%ec%84%a0">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>&lt;code>PHP&lt;/code> &lt;code>Redis&lt;/code> &lt;code>2020.4&lt;/code>&lt;/p>
+&lt;p>트래픽이 많은 리뷰 플러그인 컨텐츠 조회 및 PV 갱신으로 잦은 데이터베이스 Read&amp;amp;Update 작업을 줄이기 위해 Redis를 이용하여 캐싱 작업을 하였습니다.&lt;/p>
+&lt;p>&lt;img src="https://appservice-img.s3.amazonaws.com/apps/vlQYvhYZJ1Qih9GillXDQC/KR/list/image?1599545009" alt="https://appservice-img.s3.amazonaws.com/apps/vlQYvhYZJ1Qih9GillXDQC/KR/list/image?1599545009">&lt;/p>
+&lt;h3 id="인플루언서-자동-승인-봇-개선" >인플루언서 자동 승인 봇 개선
+&lt;span>
+&lt;a href="#%ec%9d%b8%ed%94%8c%eb%a3%a8%ec%96%b8%ec%84%9c-%ec%9e%90%eb%8f%99-%ec%8a%b9%ec%9d%b8-%eb%b4%87-%ea%b0%9c%ec%84%a0">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>&lt;code>Luigi&lt;/code> &lt;code>Flask&lt;/code> &lt;code>2020.4&lt;/code>&lt;/p>
+&lt;p>승인 파이프라인 구조적 개선과 부트스트래핑이 오래걸리고 재사용이 가능한 부분은 Flask API로 분리하여 배치 작업 시간을 크게 줄였습니다.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="ridi" >RIDI
+&lt;span>
+&lt;a href="#ridi">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>&lt;a href="https://www.ridicorp.com/">RIDI&lt;/a>&lt;/p>
+&lt;p>&lt;code>Backend Engineer&lt;/code> &lt;code>2021.8~&lt;/code>&lt;/p>
+&lt;p>&lt;code>Typescript&lt;/code> &lt;code>Kafka&lt;/code> &lt;code>PHP&lt;/code>&lt;/p>
+&lt;p>CRM 백엔드 업무를 주로 수행하고 있습니다.&lt;/p>
+&lt;h1 id="activities" >Activities
+&lt;span>
+&lt;a href="#activities">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;h2 id="dalgona" >Dalgona
+&lt;span>
+&lt;a href="#dalgona">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;p>&lt;a href="http://dalgona.me">dalgona.me&lt;/a>&lt;/p>
+&lt;p>&lt;code>Full-stack&lt;/code> &lt;code>Lead Developer&lt;/code> &lt;code>2017.5~2019.5&lt;/code>&lt;/p>
+&lt;p>&lt;code>PHP&lt;/code> &lt;code>RESTful&lt;/code> &lt;code>React&lt;/code>&lt;/p>
+&lt;p>달고나는 LooRoo의 두번째 이름으로 엔터테이먼트 플랫폼 스타트업으로 수많은 신인들을 위한 플랫폼입니다. 신인과 팬, 광고주들을 위한 소통을 공간을 제공합니다.&lt;/p>
+&lt;p>팀의 핵심 개발자로서 기술결정과 개발 관리 등 개발에 관련된 전반적인 업무를 맡아 수행했습니다.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Works&lt;/p>
+&lt;h3 id="looroo-투표-솔루션-개발" >LooRoo 투표 솔루션 개발
+&lt;span>
+&lt;a href="#looroo-%ed%88%ac%ed%91%9c-%ec%86%94%eb%a3%a8%ec%85%98-%ea%b0%9c%eb%b0%9c">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>&lt;code>PHP&lt;/code> &lt;code>MySql&lt;/code>&lt;/p>
+&lt;p>영상을 보고 투표를 하는 솔루션 개발 및 운영. LooRoo X 코치아 - 이벤트 진행&lt;/p>
+&lt;h3 id="dalgona-플랫폼-개발" >Dalgona 플랫폼 개발
+&lt;span>
+&lt;a href="#dalgona-%ed%94%8c%eb%9e%ab%ed%8f%bc-%ea%b0%9c%eb%b0%9c">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;p>&lt;code>PHP&lt;/code> &lt;code>React&lt;/code> &lt;code>RESTful&lt;/code>&lt;/p>
+&lt;p>신인과 팬을 위한 영상 플랫폼과 기업 고객과 신인을 연결해주는 플랫폼이 합쳐진 형태의 서비스 개발&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="projects" >Projects
+&lt;span>
+&lt;a href="#projects">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://dobby-budongsan.web.app/">Dobby&amp;rsquo;s Budongsan&lt;/a> | &lt;a href="https://github.com/AntonioMIN/dobby-budongsan">Github&lt;/a>&lt;/p>
+&lt;p>&lt;img src="/about/dob.png" alt="dob.png">&lt;/p>
+&lt;p>&lt;code>Vue&lt;/code> &lt;code>Parcel&lt;/code> &lt;code>Firebase&lt;/code>&lt;/p>
+&lt;p>부동산 체크 리스트 서비스입니다. 체크 리스트를 이용해서 꼼꼼하게 둘러보세요.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://play.google.com/store/apps/details?id=com.antoniomin.workflow&amp;amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">Workflow&lt;/a>&lt;/p>
+&lt;p>&lt;img src="/about/b2.png" alt="/b2.png">&lt;/p>
+&lt;p>&lt;code>Xamarin&lt;/code>&lt;/p>
+&lt;p>몸은 하나인데 해야할 일은 너무나 많죠? 하나하나 해보는건 어떠세요? Xamarin Android를 통해서 만들어진 일정관리 어플리케이션입니다. 차례대로, 순서대로 해야할 일을 저장하고 진행하세요.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://play.google.com/store/apps/details?id=com.antoniostudio.hoseodormitorymenu&amp;amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">Hoseo Dormitory Menu&lt;/a>&lt;/p>
+&lt;p>&lt;img src="/about/a1.png" alt="/a1.png">&lt;/p>
+&lt;p>&lt;code>Xamarin&lt;/code>&lt;/p>
+&lt;p>오늘 석식은 뭐지? 밥먹으러 가기전에 간편하게 오늘의 메뉴를 확인할 수 있습니다. Xamarin과 웹 크롤링을 이용한 메뉴 어플리케이션입니다. 오늘의 식단과 한 주 동안의 식단을 확인할 수 있습니다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/AntonioMIN/PlayYeogi">Comuiz&lt;/a>&lt;/p>
+&lt;p>&lt;img src="/about/comuizpage.png" alt="comuizpage.png">&lt;/p>
+&lt;p>&lt;code>PHP&lt;/code> &lt;code>CodeIgniter&lt;/code> &lt;code>MySql&lt;/code>&lt;/p>
+&lt;p>퀴즈를 만들어 유저들과 즐길수 있는 웹 페이지입니다. OX문제 부터 객관식 문제까지 자유롭게 만들수 있습니다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/AntonioMIN/Minesweeper-solve-algorithm">Minesweeper solve algorithm&lt;/a>&lt;/p>
+&lt;p>&lt;code>C&lt;/code>&lt;/p>
+&lt;p>지뢰찾기 알고리즘&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="awards" >Awards
+&lt;span>
+&lt;a href="#awards">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;ul>
+&lt;li>한국정보올림피아드 - 경남 금상 - 2016&lt;/li>
+&lt;li>한국정보올림피아드 - 전국 동상 - 2016&lt;/li>
+&lt;li>제 1 회 쿡앱스 게임 제작 공모전 - 금상 - 2017&lt;/li>
+&lt;/ul>
+&lt;h1 id="educations" >Educations
+&lt;span>
+&lt;a href="#educations">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;ul>
+&lt;li>김해경원고등학교 - 2017 졸업&lt;/li>
+&lt;li>호서대학교 컴퓨터정보공학부 - 2017 입학, 재학&lt;/li>
+&lt;/ul></description></item></channel></rss>
