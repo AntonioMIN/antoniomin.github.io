@@ -24,6 +24,10 @@ params:
   email: gvvvv1123@gmail.com # used for microformats
   description: ""
   dateFormat: "2006-01-02"
+  customCSS:
+    - css/override.css
+  customJS:
+    - js/load.js
   paginationSinglePost: true
   style: dark-without-switcher
   readMore: false # show read more button
