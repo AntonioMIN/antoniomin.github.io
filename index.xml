@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Antonio Min</title><link>/</link><description>Antonio Min</description><generator>Hugo -- gohugo.io</generator><language>ko-kr</language><lastBuildDate>Thu, 24 Feb 2022 19:35:45 +0900</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>내가 Notion으로 프로젝트 관리하는 방법</title><link>/posts/my-project-manage-on-notion/</link><pubDate>Thu, 24 Feb 2022 19:35:45 +0900</pubDate><guid>/posts/my-project-manage-on-notion/</guid><description>&lt;p>혼자서 프로젝트 거리로 괜찮은게 생기면 틈틈이 만드는 편이라 지금까지 생겼다가 죽은 프로젝트들이 많다. (그 중엔 제대로 된게 하나도 없다..) 혼자하는 프로젝트라도 다른 일을 하면서 진행하다 보면 어디까지 했는지 놓치기도 자주하고, 하다보면 이런저런 생각나는 것도 많아서 평소 일하는 스타일과 비슷하게 관리하면 어떨까라는 생각으로 노션을 이용해 관리하고 있다.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Antonio Min</title><link>/</link><description>Antonio Min</description><generator>Hugo -- gohugo.io</generator><language>ko-kr</language><lastBuildDate>Sat, 26 Feb 2022 10:24:02 +0900</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Android 휴대폰으로 홈 서버 만들기</title><link>/posts/android-phone-server/</link><pubDate>Sat, 26 Feb 2022 10:24:02 +0900</pubDate><guid>/posts/android-phone-server/</guid><description>&lt;p>집에서 추가적인 비용없이 가지고 놀 서버가 있으면 좋겠다는 생각을 하고 있다가 전에 사용하던 Android 휴대폰으로 만들어보기로 했다.&lt;/p>
+&lt;p>일단 로컬에 Docker로 사용하던 Postgresql을 옮기는걸 목표로 셋팅해봤다.&lt;/p>
+&lt;h1 id="사용기기" >사용기기
+&lt;span>
+&lt;a href="#%ec%82%ac%ec%9a%a9%ea%b8%b0%ea%b8%b0">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;ul>
+&lt;li>Sharp Aquos S3&lt;/li>
+&lt;li>퀄컴 스냅드래곤 630 SDM630 Platform (2.2 GHz)&lt;/li>
+&lt;li>4 GB LPDDR4X SDRAM, 64 GB&lt;/li>
+&lt;li>Android 10&lt;/li>
+&lt;/ul>
+&lt;h1 id="termux" >Termux
+&lt;span>
+&lt;a href="#termux">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&lt;code>F-Droid&lt;/code>를 이용해서 &lt;code>Termux&lt;/code> 를 설치해주면 Linux 환경을 사용할 수 있게된다.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://medium.com/junior-dev/how-to-re-purpose-your-old-android-phone-by-running-linux-on-it-1310df46b3fe">https://medium.com/junior-dev/how-to-re-purpose-your-old-android-phone-by-running-linux-on-it-1310df46b3fe&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>이 페이지를 따라서 ssh server 셋팅까지만 따라했다. 여기서 셋팅하는 Ubuntu에서는 제대로 셋팅되는게 하나도 없어서 포기했다.&lt;/p>
+&lt;h1 id="postgresql" >Postgresql
+&lt;span>
+&lt;a href="#postgresql">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&lt;code>Termux&lt;/code> 앱에서 계속 타이핑하긴 힘드니 셋팅해둔 ssh로 접근해서 계속 셋팅을 해줬다.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">pkg install postgresql
+&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;a href="https://gist.github.com/nairacalm/c0b392cf15e8a656ffeb3b62a116d129">https://gist.github.com/nairacalm/c0b392cf15e8a656ffeb3b62a116d129&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>설치 후 위 링크를 따라서 계정과 DB를 만들어주었다. 이 상태로 데스크탑에서 접근해도 외부 접속이 막힌 상태라 변경해줘야 한다.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection">https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>postgresql.conf&lt;/code>와 &lt;code>pg_hba.conf&lt;/code>를 수정 후 &lt;code>Postgresql&lt;/code>를 재시작해주면 외부 접근이 가능해졌다.&lt;/p>
+&lt;h1 id="그리고" >그리고..
+&lt;span>
+&lt;a href="#%ea%b7%b8%eb%a6%ac%ea%b3%a0">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>이제 서버가 되었으니 IP를 고정시켜 두었다. 일단은 Postgresql 서버로만 사용하고 있는데 나중엔 cron도 몇개 셋팅해서 돌려볼 예정이다.&lt;/p>
+&lt;p>Postgresql 데이터 이전하면서 확인해보니 속도도 나쁘지 않은것 같다. 초당 10만 로우 정도는 insert되는 것 같았다. 소프트웨어 적인 불편함이 좀 있을 수 있지만 집에서 남는 안드로이드 폰이 라즈베리파이보다 가성비가 좋을 것다.(배터리 내장으로 정전 사태에도 안전할듯)&lt;/p>
+&lt;p>Docker를 Termux 위에 사용방법이 있는데 느린것 같아 아직은 잘 모르겠다. Docker로 돌아가는 서버가 필요한 상황이면 AWS를 사용하는게 정신건강에 좋을 것 같다..&lt;/p>
+&lt;h3 id="refs" >Refs
+&lt;span>
+&lt;a href="#refs">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a href="https://f-droid.org/">https://f-droid.org&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/junior-dev/how-to-re-purpose-your-old-android-phone-by-running-linux-on-it-1310df46b3fe">https://medium.com/junior-dev/how-to-re-purpose-your-old-android-phone-by-running-linux-on-it-1310df46b3fe&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gist.github.com/nairacalm/c0b392cf15e8a656ffeb3b62a116d129">https://gist.github.com/nairacalm/c0b392cf15e8a656ffeb3b62a116d129&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection">https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>내가 Notion으로 프로젝트 관리하는 방법</title><link>/posts/my-project-manage-on-notion/</link><pubDate>Thu, 24 Feb 2022 19:35:45 +0900</pubDate><guid>/posts/my-project-manage-on-notion/</guid><description>&lt;p>혼자서 프로젝트 거리로 괜찮은게 생기면 틈틈이 만드는 편이라 지금까지 생겼다가 죽은 프로젝트들이 많다. (그 중엔 제대로 된게 하나도 없다..) 혼자하는 프로젝트라도 다른 일을 하면서 진행하다 보면 어디까지 했는지 놓치기도 자주하고, 하다보면 이런저런 생각나는 것도 많아서 평소 일하는 스타일과 비슷하게 관리하면 어떨까라는 생각으로 노션을 이용해 관리하고 있다.&lt;/p>
 &lt;p>최근 몇개 프로젝트는 노션으로 정리하면서 해봤는데, 그러면서 만든 구조를 적어두려 한다.&lt;/p>
 &lt;ul>
 &lt;li>Project : 만들고 싶은거&lt;/li>
