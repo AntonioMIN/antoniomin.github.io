@@ -30,8 +30,8 @@
 &lt;/a>
 &lt;/span>
 &lt;/h1>&lt;p>&lt;code>Termux&lt;/code> 앱에서 계속 타이핑하긴 힘드니 셋팅해둔 ssh로 접근해서 계속 셋팅을 해줬다.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">pkg install postgresql
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pkg install postgresql
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;a href="https://gist.github.com/nairacalm/c0b392cf15e8a656ffeb3b62a116d129">https://gist.github.com/nairacalm/c0b392cf15e8a656ffeb3b62a116d129&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>설치 후 위 링크를 따라서 계정과 DB를 만들어주었다. 이 상태로 데스크탑에서 접근해도 외부 접속이 막힌 상태라 변경해줘야 한다.&lt;/p>
